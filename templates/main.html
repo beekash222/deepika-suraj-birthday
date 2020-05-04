@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<body bgcolor = "#CCC">
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+<div>
+ <h1 align="center">Happy Birthday Suraj </h1>
+  <img src="{{ url_for('static', filename='cake.png') }}"  style="width:400px;height:200px; align="center"/>
+  <img src="{{ url_for('static', filename='ss.png') }}"  style="width:400px;height:200px; align="center"/>
+  <img src="{{ url_for('static', filename='ss1.png') }}"  style="width:400px;height:200px; align="center"/>
+ </div>
+ 
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+
+</head>
+<style>
+#myDIV {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px 0;
+  text-align: left;
+  background: #CCC;
+  margin-top: 20px;
+  }
+</style>
+<style>
+#myDIV1 {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px 0;
+  text-align: left;
+  background: #CCC;
+  margin-top: 20px;
+  }
+</style>
+<style>
+#myDIV2 {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px 0;
+  text-align: left;
+  background: #CCC;
+  margin-top: 20px;
+  }
+</style>
+<style>
+#myDIV3 {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px 0;
+  text-align: left;
+  background: #CCC;
+  margin-top: 20px;
+  }
+</style>
+<body>
+<br><br>
+<button onclick = "myFunction()" style="font-weight:bold;margin-center:40%;width:245px;background-color:#5900b3; border:
+darkgrey;color:white;height:25px">click me</button>
+<button onclick = "myFunction1()" style="font-weight:bold;margin-center:40%;width:245px;background-color:#5900b3; border:
+darkgrey;color:white;height:25px">inbox</button>
+<button onclick = "myFunction2()" style="font-weight:bold;margin-center:40%;width:245px;background-color:#5900b3; border:
+darkgrey;color:white;height:25px">memory lane</button>
+<button onclick = "myFunction3()" style="font-weight:bold;margin-center:40%;width:245px;background-color:#5900b3; border:
+darkgrey;color:white;height:25px">Suprise</button>
+<form action="{{ url_for('predict')}}"method="post" role="form">
+ <div id = "myDIV" style="display:none">
+ 
+    <div class="form-group">
+		<h2>"You're the one who makes me feel special..so here is my little effort to make you smile..Happy Birthday Love"</h2>
+		<img src="{{ url_for('static', filename='x4.png') }}"  style="width:400px;height:200px; align="center"/>	
+        <img src="{{ url_for('static', filename='x5.png') }}"  style="width:400px;height:200px; align="center"/>	
+        <img src="{{ url_for('static', filename='x6.png') }}"  style="width:400px;height:200px; align="center"/>			
+	 </div>
+</div>
+</form>
+<form action="{{ url_for('predict1')}}"method="post" role="form">
+<div id = "myDIV1" style="display:none"> 
+    <div class="form-group">
+		<label for="cars" align="center" >Birthday Wishes from your ones!</label><b>
+         <select id="cars" name="cars" >
+		 <option value=" "/>---wishes--- </option>
+         <option value="Deepu"/>Deepu</option>
+         <option value="Neha"/>Neha</option>
+		 <option value="Mahak"/>Mahak</option>
+         <option value="Swati"/>Swati</option>
+		 <option value="Vinisha"/>Vinisha</option>
+         <option value="Shivam"/>Shivam</option>
+		 <option value="Rohan"/>Rohan</option>
+         <option value="Anwesha"/>Anwesha</option>
+		 <option value="Manjeet"/>Manjeet</option>
+         <option value="Priyabart"/>Priyabart</option>
+		 <option value="Debu"/>Debu</option>
+         <option value="Rahul"/>Rahul</option>
+		 <option value="Pooja"/>Pooja</option>
+         <option value="Priyabart"/>Priyabart</option>
+         </select>
+		 <input class="btn btn-lg btn-primary" type="submit" style="font-weight:bold;width=135px;background-color:#5900b3;border: darkgrey;color:white;height:25px" name="Message" value="Message">
+	     <p>{{
+		 
+		 prediction_text }}</p>
+	 </div>
+
+                            
+
+
+	</div>
+
+</form>
+<form action="{{ url_for('predict2')}}"method="post" role="form">
+	 	 <div id = "myDIV2" style="display:none">
+ 
+    <div class="form-group">
+	   <h3>....Click and see your gifts....</h3>
+	   <img src="{{ url_for('static', filename='x1.png') }}"  style="width:400px;height:200px; align="center"/>	   
+	   <img src="{{ url_for('static', filename='x2.png') }}"  style="width:400px;height:200px; align="center"/>	  
+	   <img src="{{ url_for('static', filename='x3.png') }}"  style="width:400px;height:200px; align="center"/>	  
+	 </div>
+	</div>
+	
+</form>
+<form action="{{ url_for('predict3')}}"method="post" role="form">
+	 	 <div id = "myDIV3" style="display:none">
+ 
+    <div class="form-group">
+	   <h3>....Click and see your gifts....</h3>
+	   <img src="{{ url_for('static', filename='gift.png') }}"  style="width:400px;height:200px; align="center"/>	   
+		<input class="btn btn-lg btn-primary" type="Submit" style="font-weight:bold;width=135px;background-color:#5900b3;border: darkgrey;color:white;height:25px" name="Scratch_Me1" value="Scratch Me1">
+ 
+        <input class="btn btn-lg btn-primary" type="Submit" style="font-weight:bold;width=135px;background-color:#5900b3;border: darkgrey;color:white;height:25px" name="Scratch_Me2" value="Scratch Me2">
+        <input class="btn btn-lg btn-primary" type="Submit" style="font-weight:bold;width=135px;background-color:#5900b3;border: darkgrey;color:white;height:25px" name="Scratch_Me3" value="Scratch Me3">
+        <p>{{ prediction_text1 }}</p>
+	 </div>
+	</div>
+	
+</form>
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none"){
+	  x.style.display = "block";
+	  } else {
+	  x.style.display = "none";
+	  }
+	  
+	}   
+</script>
+<script>
+function myFunction1() {
+  var x = document.getElementById("myDIV1");
+  if (x.style.display === "none"){
+	  x.style.display = "block";
+	  } else {
+	  x.style.display = "none";
+	  }
+	  
+	}   
+</script>
+<script>
+function myFunction2() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "none"){
+	  x.style.display = "block";
+	  } else {
+	  x.style.display = "none";
+	  }	  
+	}   
+</script>
+<script>
+function myFunction3() {
+  var x = document.getElementById("myDIV3");
+  if (x.style.display === "none"){
+	  x.style.display = "block";
+	  } else {
+	  x.style.display = "none";
+	  }	  
+	}   
+</script>
+
+</body>
+
+</html>
