@@ -27,14 +27,18 @@ Thanks for tolerating me and my crazy habits i know its not easy but trust me i 
 
 Your love for your friends is an exquisite and amazing. sometimes i feel jealous that i never had any friendship like this with anyone.
 
-Your presence makes me feel alive, you are funny and witty and i feel more connected and comfortable with you.
+Your presence makes me feel alive, you are funny and i feel more connected and comfortable with you.
 
 You always make me smile by your crazy jokes and incidents this make my sadness disappear.
 
 Someone well said "An empty stomach need food, an empty brain needs knowledge, an empty house needs a family, and an empty heart needs love. But then, an empty life needs a friend, Thanks for filing in"
 
 
-Thanks for being wih me !'''        
+Thanks for being wih me !
+
+'''    
+
+    
     return x
 
 @app.route('/predict2',methods=['GET','POST'])
