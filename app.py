@@ -22,18 +22,14 @@ def predict():
 def predict1():
     select = request.form.get("cars","None")
     if select == "Beekash":
-        x =''''Hello Lopy,
-
-Its been 5 days with you and i know there is no such thing as a concidence! people met for a reason but whatever it is , i am so happy and glad that i have you in my life and whatever happenes in future, i will always with you becuase i know i will never have another friend like you.
-
+        x ='''Hello Lopy, Its been 5 days with you and i know there is no such thing as a concidence! people met for a reason but whatever it is , i am so happy and glad that i have you in my life and whatever happenes in future, i will always with you becuase i know i will never have another friend like you.
 Thanks for tolerating me and my crazy habits i know its not easy but trust me i never do anything intentionally to hurt you.
 
-Your love for your friends is an exquisite and sometimes i feel jealous that i never had any friendship like this with anyone.
+Your love for your friends is an exquisite and amazing. sometimes i feel jealous that i never had any friendship like this with anyone.
 
-   Your presence makes me feel alive
-   You are funny and witty 
-   I feel more connected and comfortable with you 
-   You always make me smile by your crazy jokes and incidents this make my sadness disappear.
+Your presence makes me feel alive, you are funny and witty and i feel more connected and comfortable with you.
+
+You always make me smile by your crazy jokes and incidents this make my sadness disappear.
 
 Someone well said "An empty stomach need food, an empty brain needs knowledge, an empty house needs a family, and an empty heart needs love. But then, an empty life needs a friend, Thanks for filing in"
 
