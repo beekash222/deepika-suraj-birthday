@@ -2,12 +2,33 @@
 <body bgcolor = "#CCC">
 <html >
 <!--From https://codepen.io/frytyler/pen/EGdtg-->
+<style>
+header {
+      background-color: #005582;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+}
+</style>
+<style>
+.footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #0086ad;
+   text-align: center;
+   color: white;
+}
+</style>
 <head>
 <div>
- <h1 align="center">Happy Birthday Suraj </h1>
-  <img src="{{ url_for('static', filename='cake.png') }}"  style="width:400px;height:200px; align="center"/>
-  <img src="{{ url_for('static', filename='ss.png') }}"  style="width:400px;height:200px; align="center"/>
-  <img src="{{ url_for('static', filename='ss1.png') }}"  style="width:400px;height:200px; align="center"/>
+ <header>Lopy:You are one in a million</header>
+  <img src="{{ url_for('static', filename='biku0.png') }}"  style="width:317px;height:200px; align="center"/>
+  <img src="{{ url_for('static', filename='biku1.png') }}"  style="width:317px;height:200px; align="center"/>
+  <img src="{{ url_for('static', filename='biku2.png') }}"  style="width:317px;height:200px; align="center"/>
+<img src="{{ url_for('static', filename='biku6.png') }}"  style="width:319px;height:200px; align="center"/>
  </div>
  
   <meta charset="UTF-8">
@@ -64,41 +85,24 @@
 darkgrey;color:white;height:25px">click me</button>
 <button onclick = "myFunction1()" style="font-weight:bold;margin-center:40%;width:245px;background-color:#5900b3; border:
 darkgrey;color:white;height:25px">inbox</button>
-<button onclick = "myFunction2()" style="font-weight:bold;margin-center:40%;width:245px;background-color:#5900b3; border:
-darkgrey;color:white;height:25px">memory lane</button>
 <button onclick = "myFunction3()" style="font-weight:bold;margin-center:40%;width:245px;background-color:#5900b3; border:
 darkgrey;color:white;height:25px">Suprise</button>
 <form action="{{ url_for('predict')}}"method="post" role="form">
  <div id = "myDIV" style="display:none">
  
     <div class="form-group">
-		<h2>"You're the one who makes me feel special..so here is my little effort to make you smile..Happy Birthday Love"</h2>
-		<img src="{{ url_for('static', filename='x4.png') }}"  style="width:400px;height:200px; align="center"/>	
-        <img src="{{ url_for('static', filename='x5.png') }}"  style="width:400px;height:200px; align="center"/>	
-        <img src="{{ url_for('static', filename='x6.png') }}"  style="width:400px;height:200px; align="center"/>			
+		<h2>"You're the one who makes me feel special..so here is my little effort to make you smile.."</h2>
+			
 	 </div>
 </div>
 </form>
 <form action="{{ url_for('predict1')}}"method="post" role="form">
 <div id = "myDIV1" style="display:none"> 
     <div class="form-group">
-		<label for="cars" align="center" >Birthday Wishes from your ones!</label><b>
+		<label for="cars" align="center" >A small message from your loved ones!</label><b>
          <select id="cars" name="cars" >
-		 <option value=" "/>---wishes--- </option>
-         <option value="Deepu"/>Deepu</option>
-         <option value="Neha"/>Neha</option>
-		 <option value="Mahak"/>Mahak</option>
-         <option value="Swati"/>Swati</option>
-		 <option value="Vinisha"/>Vinisha</option>
-         <option value="Shivam"/>Shivam</option>
-		 <option value="Rohan"/>Rohan</option>
-         <option value="Anwesha"/>Anwesha</option>
-		 <option value="Manjeet"/>Manjeet</option>
-         <option value="Priyabart"/>Priyabart</option>
-		 <option value="Debu"/>Debu</option>
-         <option value="Rahul"/>Rahul</option>
-		 <option value="Pooja"/>Pooja</option>
-         <option value="Priyabart"/>Priyabart</option>
+		 <option value=" "/>---Message--- </option>
+         <option value="Beekash"/>Beekash</option>
          </select>
 		 <input class="btn btn-lg btn-primary" type="submit" style="font-weight:bold;width=135px;background-color:#5900b3;border: darkgrey;color:white;height:25px" name="Message" value="Message">
 	     <p>{{
@@ -117,9 +121,9 @@ darkgrey;color:white;height:25px">Suprise</button>
  
     <div class="form-group">
 	   <h3>....Click and see your gifts....</h3>
-	   <img src="{{ url_for('static', filename='x1.png') }}"  style="width:400px;height:200px; align="center"/>	   
-	   <img src="{{ url_for('static', filename='x2.png') }}"  style="width:400px;height:200px; align="center"/>	  
-	   <img src="{{ url_for('static', filename='x3.png') }}"  style="width:400px;height:200px; align="center"/>	  
+	   <img src="{{ url_for('static', filename='x1.png') }}"  style="width:300px;height:200px; align="centerr"/>	   
+	   <img src="{{ url_for('static', filename='x2.png') }}"  style="width:300px;height:200px; align="center"/>	  
+	   <img src="{{ url_for('static', filename='x3.png') }}"  style="width:300px;height:200px; align="center"/>	  
 	 </div>
 	</div>
 	
@@ -183,6 +187,9 @@ function myFunction3() {
 	  }	  
 	}   
 </script>
+<div class="footer">
+   <p>Developed by Beekash Mohanty</p>
+</div>
 
 </body>
 
